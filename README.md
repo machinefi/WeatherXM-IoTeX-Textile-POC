@@ -8,19 +8,21 @@ https://textile.notion.site/IoTeX-WeatherXM-Textile-POC-Scope-1f2aaa580a134daea8
 
 1. Follow the README in https://github.com/machinefi/weatherxm-qod/blob/main/README.md#running-on-docker-locally to generate All WeatherXM QoD scores of all devices into `result.json` file.
 
-notes: a lightweight `result.json` is provided in `./dataset` folder
+notes: a lightweight `result.json` example is provided in `./dataset` folder
 
-2. Create a w3bstream project on https://sandbox.w3bstream.com
+2. Compile the `methods.rs` in `./zk` folder
 
-notes: compiled `methods.rs` is provided in `./dataset` folder
+notes: a compiled `methods.rs` has been provided in `./dataset` folder
 
-3. Send `result.json` via `ioctl` to w3bstream Server
+3. Create a w3bstream project on https://sandbox.w3bstream.com
+
+4. Send `result.json` via `ioctl` to w3bstream Server
 
 ```shell
 ioctl config set wsEndpoint 'sprout-staging.w3bstream.com:9000'
 
 // TODO: fix this
-ioctl ws message send --project-id 43 --project-version "0.1" --data "{\"private_input\":\"20.5\", \"public_input\":\"12.8\", \"receipt_type\":\"Snark\"}" 
+ioctl ws message send --project-id 43 --project-version "0.1" --data "{\"data\":\"$(cat ./dataset/result.json)\", \"receipt_type\":\"Snark\"}" 
 ```
 
-4. Check the result via [Basin-Cli](https://github.com/tablelandnetwork/basin-cli/tree/main?tab=readme-ov-file#listing-events)
+5. Check the result via [Basin-Cli](https://github.com/tablelandnetwork/basin-cli/tree/main?tab=readme-ov-file#listing-events) with the vaultID ``
