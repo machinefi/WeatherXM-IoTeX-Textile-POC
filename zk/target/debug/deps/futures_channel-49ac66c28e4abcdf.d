@@ -1,9 +1,0 @@
-/Users/taotalk/project_rust/WeatherXM-IoTeX-Textile-POC/zk/target/debug/deps/libfutures_channel-49ac66c28e4abcdf.rmeta: /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lib.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lock.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/mod.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/queue.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/oneshot.rs
-
-/Users/taotalk/project_rust/WeatherXM-IoTeX-Textile-POC/zk/target/debug/deps/futures_channel-49ac66c28e4abcdf.d: /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lib.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lock.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/mod.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/queue.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/oneshot.rs
-
-/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lib.rs:
-/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lock.rs:
-/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/mod.rs:
-/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/queue.rs:
-/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/oneshot.rs:
