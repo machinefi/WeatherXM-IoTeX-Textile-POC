@@ -17,6 +17,7 @@
 
 use risc0_zkvm::guest::env;
 use serde::Deserialize;
+use serde_json::Value as JsonValue;
 
 risc0_zkvm::guest::entry!(main);
 
@@ -31,7 +32,8 @@ pub fn main() {
     let input: String = env::read();
     // env::log(&format!("input: {:?}", input));
 
-    let devices: Vec<Device> = serde_json::from_str(&input).unwrap();
+    let v: JsonValue = serde_json::from_str(&input).unwrap();
+    let devices: Vec<Device> = serde_json::from_str(v["data"].as_str().unwrap()).unwrap();
     let sum: f64 = devices.iter().map(|x| x.qod_score).sum();
     let avg = sum / (devices.len() as f64);
 
