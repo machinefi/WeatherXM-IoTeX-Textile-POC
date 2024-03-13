@@ -12,7 +12,7 @@ notes: a lightweight `result.json` example is provided in `./dataset` folder
 
 2. Compile the `methods.rs` in `./zk` folder
 
-notes: a compiled `methods.rs` has been provided in `./dataset` folder
+notes: a compiled `methods.rs` has been provided in `./dataset` folder, or you can build it in `./zk` folder.
 
 3. Create a w3bstream project on https://sandbox.w3bstream.com
 
@@ -22,7 +22,7 @@ notes: a compiled `methods.rs` has been provided in `./dataset` folder
 ioctl config set wsEndpoint 'sprout-staging.w3bstream.com:9000'
 
 // TODO: fix this
-ioctl ws message send --project-id 43 --project-version "0.1" --data "{\"data\":\"$(cat ./dataset/result.json)\", \"receipt_type\":\"Snark\"}" 
+ioctl ws message send --project-id 43 --project-version "0.1" --data "{\"data\":\"$(cat ./dataset/result.json)\", \"receipt_type\":\"Stark\"}" 
 ```
 
 5. Check the result via [Basin-Cli](https://github.com/tablelandnetwork/basin-cli/tree/main?tab=readme-ov-file#listing-events) with the vaultID ``
