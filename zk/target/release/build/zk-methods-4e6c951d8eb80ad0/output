@@ -1,0 +1,9 @@
+Building guest package zk-methods.zk
+cargo:rerun-if-env-changed=RISC0_SKIP_BUILD
+Using rustc: /Users/taotalk/.rustup/toolchains/risc0/bin/rustc
+cargo:rerun-if-env-changed=RISC0_RUST_SRC
+Building guest package: cargo build --target riscv32im-risc0-zkvm-elf
+cargo:rerun-if-env-changed=RISC0_BUILD_DEBUG
+cargo:rerun-if-env-changed=RISC0_BUILD_DEBUG
+cargo:rerun-if-changed=/Users/taotalk/project_rust/WeatherXM-IoTeX-Textile-POC/zk/target/release/build/zk-methods-4e6c951d8eb80ad0/out/methods.rs
+cargo:warning=methods_path is: "/Users/taotalk/project_rust/WeatherXM-IoTeX-Textile-POC/zk/target/release/build/zk-methods-4e6c951d8eb80ad0/out/methods.rs"

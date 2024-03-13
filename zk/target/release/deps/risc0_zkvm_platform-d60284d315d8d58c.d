@@ -1,0 +1,10 @@
+/Users/taotalk/project_rust/WeatherXM-IoTeX-Textile-POC/zk/target/release/deps/librisc0_zkvm_platform-d60284d315d8d58c.rmeta: /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/lib.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/memory.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/syscall.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/../README.md
+
+/Users/taotalk/project_rust/WeatherXM-IoTeX-Textile-POC/zk/target/release/deps/librisc0_zkvm_platform-d60284d315d8d58c.rlib: /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/lib.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/memory.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/syscall.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/../README.md
+
+/Users/taotalk/project_rust/WeatherXM-IoTeX-Textile-POC/zk/target/release/deps/risc0_zkvm_platform-d60284d315d8d58c.d: /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/lib.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/memory.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/syscall.rs /Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/../README.md
+
+/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/lib.rs:
+/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/memory.rs:
+/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/syscall.rs:
+/Users/taotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zkvm-platform-0.20.1/src/../README.md:
