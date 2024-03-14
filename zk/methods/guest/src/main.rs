@@ -32,7 +32,11 @@ pub fn main() {
     let input: String = env::read();
     // env::log(&format!("input: {:?}", input));
 
-    let v: JsonValue = serde_json::from_str(&input).unwrap();
+    let input_v: JsonValue = serde_json::from_str(&input).unwrap();
+    let item_str = input_v.as_array().unwrap()[0].as_str().unwrap();
+    let v: JsonValue = serde_json::from_str(item_str).unwrap();
+
+    // env::log(&format!("input v: {:?}", v));
     let devices: Vec<Device> = serde_json::from_str(v["data"].as_str().unwrap()).unwrap();
     let sum: f64 = devices.iter().map(|x| x.qod_score).sum();
     let avg = sum / (devices.len() as f64);
