@@ -21,8 +21,24 @@ notes: a compiled `methods.rs` has been provided in `./dataset` folder, or you c
 ```shell
 ioctl config set wsEndpoint 'sprout-staging.w3bstream.com:9000'
 
-// TODO: fix this
+ioctl ws code convert -v "0.1" -t "risc0" -i "./dataset/methods.rs" -c "./config/textile.json"  -e "{\"image_id\":\"ZK_ID\", \"elf\":\"ZK_ELF\"}"
+
+``` 
+add `output` in the `./config/textile.json`, like `./config/textile.json.example`
+``` json
+      "output": {
+        "type": "textile",
+        "textile": {
+          "vaultID": "qod_poc.data"
+        }
+      }
+```
+
+``` shell
+// the command will get a project id
+ioctl ws project --contract-address xxx create --project-config-file ./config/textile.json 
+
 ioctl ws message send --project-id 43 --project-version "0.1" --data "{\"data\":\"$(cat ./dataset/result.json)\", \"receipt_type\":\"Stark\"}" 
 ```
 
-5. Check the result via [Basin-Cli](https://github.com/tablelandnetwork/basin-cli/tree/main?tab=readme-ov-file#listing-events) with the vaultID `qod_poc`
+5. Check the result via [Basin-Cli](https://github.com/tablelandnetwork/basin-cli/tree/main?tab=readme-ov-file#listing-events) with the vaultID `qod_poc.data`
