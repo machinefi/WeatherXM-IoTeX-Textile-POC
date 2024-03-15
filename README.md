@@ -29,16 +29,16 @@ add `output` in the `./config/textile.json`, like `./config/textile.json.example
       "output": {
         "type": "textile",
         "textile": {
-          "vaultID": "qod_poc.data"
+          "vaultID": "your_vault_id"
         }
       }
 ```
 
 ``` shell
 // the command will get a project id
-ioctl ws project --contract-address xxx create --project-config-file ./config/textile.json 
+ioctl ws project --contract-address 0x02feBE78F3A740b3e9a1CaFAA1b23a2ac0793D26 create --project-config-file ./config/textile.json 
 
-ioctl ws message send --project-id 43 --project-version "0.1" --data "{\"data\":\"$(cat ./dataset/result.json)\", \"receipt_type\":\"Stark\"}" 
+ioctl ws message send --project-id 82 --project-version "0.1" --data "{\"data\":\"$(cat ./dataset/result.json)\", \"receipt_type\":\"Stark\"}" 
 ```
 
-5. Check the result via [Basin-Cli](https://github.com/tablelandnetwork/basin-cli/tree/main?tab=readme-ov-file#listing-events) with the vaultID `qod_poc.data`
+5. Check the result via [Basin-Cli](https://github.com/tablelandnetwork/basin-cli/tree/main?tab=readme-ov-file#listing-events) with the vaultID `qod_poc_vault.data`

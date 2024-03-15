@@ -6,7 +6,7 @@
       "output": {
         "type": "textile",
         "textile": {
-          "vaultID": "qod_poc.data"
+          "vaultID": "qod_poc_vault.data"
         }
       },
       "vmType": "risc0"
