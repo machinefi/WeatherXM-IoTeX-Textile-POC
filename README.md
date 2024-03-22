@@ -21,26 +21,14 @@ notes: a compiled `methods.rs` has been provided in `./dataset` folder, or you c
 // cli setup
 ioctl config set wsEndpoint 'sprout-staging.w3bstream.com:9000'
 
-ioctl ws code convert -v "0.1" -t "risc0" -i "./dataset/methods.rs" -c "./config/textile.json"  -e "{\"image_id\":\"ZK_ID\", \"elf\":\"ZK_ELF\"}"
-``` 
-
-add `output` in the `./config/textile.json`
-
-``` json
-      "output": {
-        "type": "textile",
-        "textile": {
-          "vaultID": "qod_poc_vault.data"
-        }
-      }
+ioctl ws project config -v "0.1" -t "risc0" -i "./dataset/methods.rs" -c "./dataset/textile.json"  -e "{\"image_id\":\"ZK_ID\", \"elf\":\"ZK_ELF\"}" -u "./dataset/textile_output_template.json"
 ```
-notes: a complete `textile.json` has been provided in `./dataset` folder.
 
 4. Create a w3bstream project via `ioctl`
 
 
 ``` shell
-ioctl ws project --contract-address 0x02feBE78F3A740b3e9a1CaFAA1b23a2ac0793D26 create --project-config-file ./config/textile.json 
+ioctl ws project --contract-address 0x02feBE78F3A740b3e9a1CaFAA1b23a2ac0793D26 create --project-config-file ./dataset/textile.json 
 ```
 
 5. Send `result.json` via `ioctl` to w3bstream Server
