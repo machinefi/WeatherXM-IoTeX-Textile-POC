@@ -37,7 +37,7 @@ Notes: a compiled `methods.rs` is provided in `./dataset` folder, or you can bui
 
 ![screenshot_sandbox](https://github.com/machinefi/w3bstream/assets/55118568/d83d35b6-4d87-4852-a742-f1cf5d5b5ae2)
 
-**Via [ioctl-Cli](https://docs.iotex.io/the-iotex-stack/reference/ioctl-cli-reference) (CLI to interact with IoTeX chain and w3bstream service)**
+**Via [ioctl-Cli](https://docs.iotex.io/the-iotex-stack/wallets/command-line-client) (CLI to interact with IoTeX chain and w3bstream service)**
 
  - Generate config for the project
 
